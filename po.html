@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+<style type="text/css">
+body {
+   margin: 0;
+   padding: 0;
+}
+</style>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <script type="text/javascript">
+function getParameterByName(name) {
+	name = name.replace(/[\[]/, "\[").replace(/[\]]/, "\]");
+	var regex = new RegExp("[\?&]" + name + "=([^&#]*)"),
+	results = regex.exec(location.search);
+	return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+var getURL = getParameterByName('get');
+var getIMG = getParameterByName('img');
+var getKEY  = getParameterByName('key');
+var getKEY2  = getParameterByName('key2');
+if (getURL == "#") {alert('Vuelve a la pÃƒÂ¡gina anterior');}
+</script>
+        <div id="pplayer"></div>
+        <script type="text/javascript" src="https://ssl.p.jwpcdn.com/player/v/8.25.7/jwplayer.js"></script>
+        <script> jwplayer.key='XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';</script>
+        <script type="text/javascript" src="https://megatelevisionhd.com/js/jwplayer.js"></script>
+    </body>
+</html>
